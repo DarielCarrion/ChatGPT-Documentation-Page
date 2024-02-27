@@ -1,0 +1,110 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#navbar header {
+    font-size: 24px;
+    color: #5f6368;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center; /* Centers text horizontally */
+    width: 100%; /* Ensures the header takes full width of the navbar */
+}
+
+
+.nav-link {
+    color: #5f6368;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 90%;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #e1e1e1;
+}
+
+/* Main Content Styles */
+#main-doc {
+    margin-left: 220px;
+    padding: 40px;
+    max-width: 800px;
+}
+
+.main-section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-section header {
+    font-size: 22px;
+    color: #1a73e8;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+code {
+    display: block;
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-top: 0;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
